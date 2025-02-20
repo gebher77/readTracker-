@@ -1,6 +1,6 @@
-package com.tracker.model;
+package com.tracker.model.entities;
 
-import com.tracker.enums.Reading_Status;
+import com.tracker.model.enums.Reading_Status;
 
 import java.time.LocalDate;
 public class Reading {
@@ -80,5 +80,21 @@ public class Reading {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    //POSSÍVEL MÉTODO PARA CRIAÇÃO DO READING COM BASE NO BOOK CRIADO NO MÉTODO MAIN
+
+    //EDITAR TOSTRING PADRÃO
+    @Override
+    public String toString() {
+        return "Reading{" +
+                "reading_id=" + reading_id +
+                ", book=" + book +
+                ", start_date=" + start_date +
+                ", end_date=" + end_date +
+                ", status=" + status +
+                ", current_page=" + current_page +
+                ", comment='" + comment + '\'' +
+                '}';
     }
 }

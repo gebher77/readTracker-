@@ -1,4 +1,4 @@
-package com.tracker.enums;
+package com.tracker.model.enums;
 
 public enum Reading_Status {
     IN_PROGRESS,

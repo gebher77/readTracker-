@@ -1,4 +1,4 @@
-package com.tracker.model;
+package com.tracker.model.entities;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -45,11 +45,12 @@ public class ReadingList {
         list.remove(reading);
     }
 
+
     public void getTotalReadings(){
         System.out.println("Número total de leituras: " + list.size());
         System.out.println("Livros: ");
         list.forEach(e -> {
-            System.out.println(e.getBook().getTitle());
+            System.out.println(e.getReading_id() + " - " + e.getBook().getTitle());
         });
     }
 }
