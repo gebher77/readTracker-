@@ -43,7 +43,25 @@ public enum Genre {
     DRAMA("Drama"),
 
     @SerializedName("Adventure")
-    ADVENTURE("Aventura");
+    ADVENTURE("Aventura"),
+
+    @SerializedName("Philosophy")
+    PHILOSOPHY("Filosofia"),
+
+    @SerializedName("Science")
+    SCIENCE("Ciência"),
+
+    @SerializedName("Travel")
+    TRAVEL("Viagem"),
+
+    @SerializedName("Cooking")
+    COOKING("Culinária"),
+
+    @SerializedName("Art")
+    ART("Arte"),
+
+    @SerializedName("Music")
+    MUSIC("Música");
 
     private final String displayName;
 
